@@ -109,7 +109,7 @@ router.post('/signin', (req, res) => {
                 bcrypt.compare(password, hashedPassword).then(result => {
                     if(result){
                         res.json({
-                            status: "Success",
+                            status: "SUCCESS",
                             message: "login successfull",
                             data: data
                         })
